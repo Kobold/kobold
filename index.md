@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<div class="home">
+<div>
+
+  <div markdown="1">
+My text with **markdown** syntax
+  </div>
 
   <h1 class="page-heading">Posts</h1>
 
