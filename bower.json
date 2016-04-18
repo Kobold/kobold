@@ -1,0 +1,19 @@
+{
+  "name": "kobold.github.io",
+  "homepage": "andykish.com",
+  "authors": [
+    "Andy Kish <agkish@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
