@@ -20,9 +20,6 @@ env.cloudfiles_username = 'my_rackspace_username'
 env.cloudfiles_api_key = 'my_rackspace_api_key'
 env.cloudfiles_container = 'my_cloudfiles_container'
 
-# Github Pages configuration
-env.github_pages_branch = "gh-pages"
-
 # Port for `serve`
 PORT = 8000
 
@@ -34,7 +31,7 @@ def clean():
 
 def build():
     """Build local version of site"""
-    local('pelican -s pelicanconf.py')
+    local('pelican -s pelicanconf.py -t andystheme')
 
 def rebuild():
     """`clean` then `build`"""
@@ -90,5 +87,7 @@ def publish():
 def gh_pages():
     """Publish to GitHub Pages"""
     rebuild()
-    local("ghp-import -b {github_pages_branch} {deploy_path}".format(**env))
-    local("git push origin {github_pages_branch}".format(**env))
+    local("ghp-import {deploy_path}".format(**env))
+    local("git push origin gh-pages:master".format(**env))
+
+
