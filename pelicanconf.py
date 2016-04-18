@@ -9,6 +9,10 @@ SITEURL = ''
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['assets']
 
+# The CNAME file should never be deleted from the output directory.
+OUTPUT_RETENTION = ['CNAME']
+
+
 PATH = 'content'
 
 TIMEZONE = 'US/Pacific'
