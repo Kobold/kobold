@@ -6,6 +6,9 @@ AUTHOR = u'Andy Kish'
 SITENAME = u'Andy Kish'
 SITEURL = ''
 
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['assets']
+
 PATH = 'content'
 
 TIMEZONE = 'US/Pacific'
