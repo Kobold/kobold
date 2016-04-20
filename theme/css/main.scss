@@ -1,7 +1,10 @@
+$font-family-base:     "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size-base:       17px;
+
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
+
 body {
-    background: #F5F4EF;
-    color: #000305;
-    text-align: left;
+  background: #F5F4EF;
 }
