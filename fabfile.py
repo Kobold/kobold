@@ -33,11 +33,6 @@ def build():
     """Build local version of site"""
     local('pelican -s pelicanconf.py -t andystheme')
 
-def rebuild():
-    """`clean` then `build`"""
-    clean()
-    build()
-
 def regenerate():
     """Automatically regenerate site upon file modification"""
     local('pelican -r -s pelicanconf.py')
@@ -65,7 +60,7 @@ def preview():
 
 def cf_upload():
     """Publish to Rackspace Cloud Files"""
-    rebuild()
+    build()
     with lcd(DEPLOY_PATH):
         local('swift -v -A https://auth.api.rackspacecloud.com/v1.0 '
               '-U {cloudfiles_username} '
@@ -86,7 +81,7 @@ def publish():
 
 def gh_pages():
     """Publish to GitHub Pages"""
-    rebuild()
+    build()
     local("ghp-import {deploy_path}".format(**env))
     local("git push origin gh-pages:master".format(**env))
 
