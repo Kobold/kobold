@@ -18,7 +18,7 @@ And doing things day to day:
 
 # To serve it to localhost:8080
 ❯ cd output
-❯ python -m pelican.server
+❯ python -m pelican.server 8080
 
 # To push it live.
 ❯ fab gh_pages
