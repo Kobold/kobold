@@ -1,10 +1,32 @@
-$font-family-base:     "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base:     "comenia-sans-web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headings-font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-size-base:       17px;
+$font-size-base:       16px;
 
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 
 body {
   background: #F5F4EF;
+}
+
+.header {
+  margin-bottom: 66px;
+}
+
+.header-title {
+  font-size: 60px;
+}
+
+.item-title {
+  margin-top: 45px;
+  margin-bottom: 6px;
+}
+
+.item-subtitle,
+.item-location {
+  color: #666;
+}
+
+.item-location {
+  font-size: 15px;
 }
