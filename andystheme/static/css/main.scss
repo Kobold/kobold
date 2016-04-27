@@ -24,9 +24,39 @@ body {
 
 .item-subtitle,
 .item-location {
-  color: #666;
+  color: $gray;
 }
 
 .item-location {
-  font-size: 15px;
+  font-size: 14px;
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
 }
+
+.item-popout-col {
+  color: $gray;
+
+  @media (min-width: $screen-sm-min) {
+    position: relative;
+    height: 0;  // Assumes overflow is visible.
+    margin: 0;
+    text-align: right;
+
+    right: 125px;
+    width: 100px;
+  }
+  @media (min-width: $screen-md-min) {
+    right: 292px;
+    width: 242px;
+  }
+}
+
+
+//
+// Utility classes.
+//
+.arrow {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
